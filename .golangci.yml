@@ -6,7 +6,8 @@ formatters:
     - goimports
   settings:
     goimports:
-      local-prefixes: github.com/ddovwll/lline
+      local-prefixes:
+        - github.com/ddovwll/lline
 
 linters:
   enable:
