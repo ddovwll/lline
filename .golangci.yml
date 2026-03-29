@@ -1,0 +1,25 @@
+version: "2"
+
+formatters:
+  enable:
+    - gofmt
+    - goimports
+  settings:
+    goimports:
+      local-prefixes: github.com/ddovwll/lline
+
+linters:
+  enable:
+    - govet
+    - staticcheck
+    - errcheck
+    - ineffassign
+    - lll
+  settings:
+    lll:
+      tab-width: 4
+      line-length: 120
+
+issues:
+  max-issues-per-linter: 0
+  max-same-issues: 0
